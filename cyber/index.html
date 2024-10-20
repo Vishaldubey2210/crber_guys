@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Guys - Fun & Friendship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="showPopup()">
+    <header>
+        <h1>CYBER GUYS</h1>
+    </header>
+
+    <div class="container">
+        <!-- Friendship Level Section -->
+        <div class="box">
+            <h2>Friendship Level</h2>
+            <div class="input-box">
+                <input type="text" id="name1" placeholder="Enter first name">
+                <input type="text" id="name2" placeholder="Enter second name">
+                <button onclick="calculateFriendshipLevel()">Submit</button>
+            </div>
+            <div id="result"></div>
+        </div>
+
+        <!-- Predict My Random Friend Section -->
+        <div class="box">
+            <h2>Predict My Random Friend</h2>
+            <div class="input-box">
+                <input type="text" id="yourName" placeholder="Enter your name">
+                <button onclick="predictRandomFriend()">Predict</button>
+            </div>
+            <div id="prediction"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by Vishal Dubey</p>
+    </footer>
+
+    <!-- Warning Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Only for cyber security guys and for fun purpose only!</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
